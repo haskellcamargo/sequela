@@ -4,6 +4,7 @@
   "description": "The magic SQL parser for JS!",
   "main": "index.js",
   "scripts": {
+    "build": "pegjs -o ./index.js --optimize speed ./src/sql.pegjs",
     "test": "npm test"
   },
   "repository": {
