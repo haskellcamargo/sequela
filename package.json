@@ -1,0 +1,23 @@
+{
+  "name": "sequela",
+  "version": "0.1.0",
+  "description": "The magic SQL parser for JS!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haskellcamargo/sequela.git"
+  },
+  "keywords": [
+    "sql",
+    "parser"
+  ],
+  "author": "Marcelo Camargo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haskellcamargo/sequela/issues"
+  },
+  "homepage": "https://github.com/haskellcamargo/sequela#readme"
+}
