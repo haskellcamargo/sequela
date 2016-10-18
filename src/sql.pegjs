@@ -3,12 +3,18 @@
  */
 
 Query "query"
-  = 'select'i SetQuantifier? fields:SelectList __ {
+  = 'select'i SetQuantifier? fields:SelectList TableExpr __ {
     return {
       type: 'SelectStmt',
       fields: fields
     };
   }
+
+TableExpr "table expression"
+  = FromClause
+
+FromClause "from clause" // TODO: Implement support for joins and complex tables
+  = 'from'i _ table:Identifier { return table; }
 
 SelectList "select list"
   = _
