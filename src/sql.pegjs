@@ -1,8 +1,14 @@
 Query "query"
-  = 'select'i SetQuantifier? __ {
+  = 'select'i SetQuantifier? fields:SelectList __ {
     return {
-      type: 'SelectStmt'
+      type: 'SelectStmt',
+      fields: fields
     };
+  }
+
+SelectList "select list"
+  = _ items:( '*' { return ['*'] } ) {
+    return items;
   }
 
 SetQuantifier "quantifier"
