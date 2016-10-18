@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "pegjs -o ./index.js --optimize speed ./src/sql.pegjs",
-    "test": "npm test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   "homepage": "https://github.com/haskellcamargo/sequela#readme",
   "dependencies": {},
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
     "pegjs": "^0.10.0"
   }
 }

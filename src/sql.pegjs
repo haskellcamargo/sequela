@@ -11,7 +11,7 @@ Query "query"
   }
 
 TableExpr "table expression"
-  = FromClause
+  = _ FromClause
 
 FromClause "from clause" // TODO: Implement support for joins and complex tables
   = 'from'i _ table:Identifier { return table; }
